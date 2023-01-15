@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningPoker.Client", "PlanningPoker.Client\PlanningPoker.Client.csproj", "{E4A74989-F6EC-46A6-BEAD-AC7978246BAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningPoker.Server", "PlanningPoker.Server\PlanningPoker.Server.csproj", "{A38054DC-261A-4E45-92F1-9CC20183D48E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{E4A74989-F6EC-46A6-BEAD-AC7978246BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4A74989-F6EC-46A6-BEAD-AC7978246BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4A74989-F6EC-46A6-BEAD-AC7978246BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38054DC-261A-4E45-92F1-9CC20183D48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38054DC-261A-4E45-92F1-9CC20183D48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38054DC-261A-4E45-92F1-9CC20183D48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38054DC-261A-4E45-92F1-9CC20183D48E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
