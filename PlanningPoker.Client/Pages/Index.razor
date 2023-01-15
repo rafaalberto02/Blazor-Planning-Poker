@@ -1,15 +1,27 @@
 ﻿@page "/"
+@using PlanningPoker.Shared.Dtos
+@using System.Text.Json
+@inject Services.Rooms.IRoomService RoomService
 
-@foreach (var cardValue in cardValues)
+@if (_roomCollection is null)
 {
-    <Card CardValue=@cardValue.ToString()/>
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var room in _roomCollection)
+    {
+        <pre>@JsonSerializer.Serialize(room, new JsonSerializerOptions() { })</pre>
+    }
 }
 
 
 @code
 {
-    List<int?> cardValues = new()
+    private IReadOnlyCollection<RoomDto>? _roomCollection = null;
+
+    protected override async Task OnInitializedAsync()
     {
-        2, 3, 8, 5, null
-    };
+        _roomCollection = await RoomService.GetActiveRooms();
+    }
 }
