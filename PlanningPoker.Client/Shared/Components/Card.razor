@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-content">
+        @if (string.IsNullOrWhiteSpace(CardValue))
+        {
+            <p>?</p>
+        }
+        else
+        {
+            <p>@CardValue</p>
+        }
+    </div>
+    <div class="card-author">
+        <div class="author-avatar">
+            <img src="https://picsum.photos/40" alt="User Profile Image"/>
+        </div>
+        <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+        </svg>
+
+        <div class="author-name">
+            <div class="author-name-prefix">User</div>
+            User Name
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public string? CardValue { get; set; }
+
+}
