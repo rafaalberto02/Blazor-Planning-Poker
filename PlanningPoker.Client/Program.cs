@@ -1,8 +1,11 @@
+using PlanningPoker.Client.DI;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.UseStaticWebAssets();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.AddServices();
 
 var app = builder.Build();
 
