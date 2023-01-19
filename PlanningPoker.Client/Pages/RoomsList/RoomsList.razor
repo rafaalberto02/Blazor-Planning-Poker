@@ -1,6 +1,15 @@
 @page "/RoomsList"
-<h3>RoomsList</h3>
 
-@code {
-    
+@if (_roomCollection is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="room-list">
+        @foreach (var room in _roomCollection)
+        {
+            <RoomSelectorItem RoomObject="room"/>
+        }
+    </div>
 }
