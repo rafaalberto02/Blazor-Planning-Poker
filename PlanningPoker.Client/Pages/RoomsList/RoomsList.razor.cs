@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Components;
 using PlanningPoker.Client.Services.Rooms;
 using PlanningPoker.Shared.Dtos;
 
@@ -5,16 +6,12 @@ namespace PlanningPoker.Client.Pages.RoomsList;
 
 public partial class RoomsList
 {
-    private IReadOnlyCollection<RoomDto>? _roomCollection = null;
-    private readonly IRoomService _roomService;
+    private IReadOnlyCollection<RoomDto>? _roomCollection;
 
-    public RoomsList(IRoomService roomService)
-    {
-        _roomService = roomService;
-    }
+    [Inject] protected IRoomService RoomService { get; set; } = default!;
 
     protected override async Task OnInitializedAsync()
     {
-        _roomCollection = await _roomService.GetActiveRooms();
+        _roomCollection = await RoomService.GetActiveRooms();
     }
 }
