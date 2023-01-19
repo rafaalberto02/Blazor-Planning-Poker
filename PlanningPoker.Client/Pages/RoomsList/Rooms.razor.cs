@@ -4,7 +4,7 @@ using PlanningPoker.Shared.Dtos;
 
 namespace PlanningPoker.Client.Pages.RoomsList;
 
-public partial class RoomsList
+public partial class Rooms
 {
     private IReadOnlyCollection<RoomDto>? _roomCollection;
 
