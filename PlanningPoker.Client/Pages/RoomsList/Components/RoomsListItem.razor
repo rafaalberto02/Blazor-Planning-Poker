@@ -1,5 +1,16 @@
-<h3>RoomsListItem</h3>
-
-@code {
-    
-}
+<div class="room">
+    @if (RoomObject is null)
+    {
+        <div>loading...</div>
+    }
+    else
+    {
+        <div class="left-content">
+            <h2 class="room-name">@RoomObject.Name</h2>
+            <span class="room-owner">@RoomObject.OwnerUser.Name</span>
+        </div>
+        <div class="right-content">
+            <button type="button" class="open-btn">Open Room</button>
+        </div>
+    }
+</div>

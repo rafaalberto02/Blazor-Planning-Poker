@@ -1,4 +1,5 @@
 @page "/RoomsList"
+@using PlanningPoker.Client.Pages.RoomsList.Components
 
 @if (_roomCollection is null)
 {
@@ -9,7 +10,7 @@ else
     <div class="room-list">
         @foreach (var room in _roomCollection)
         {
-            <RoomSelectorItem RoomObject="room"/>
+            <RoomsListItem RoomObject="room"/>
         }
     </div>
 }

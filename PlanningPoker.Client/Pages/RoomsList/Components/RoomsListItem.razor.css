@@ -1,0 +1,34 @@
+.room {
+    font-size: 1rem;
+    font-family: 'DM Mono', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    padding: 1.5rem;
+    border: 2px solid #ff8a00;
+    border-radius: 16px;
+    box-shadow: -1rem 0 3rem #000;
+}
+
+h2.room-name {
+    font-weight: 700;
+}
+
+span.room-owner {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #7a7a8c;
+}
+
+button.open-btn {
+    background: #ff8a00;
+    color: white;
+    border: none;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: -1rem 0 3rem #000;
+    font-family: 'DM Mono', sans-serif;
+}
