@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using PlanningPoker.Shared.Dtos;
 
-namespace PlanningPoker.Client.Pages.RoomsList.Components;
+namespace PlanningPoker.Client.Pages.Rooms.Components;
 
 public partial class RoomsListItem
 {
