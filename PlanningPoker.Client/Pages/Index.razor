@@ -11,7 +11,7 @@ else
 {
     @foreach (var room in _roomCollection)
     {
-        <pre>@JsonSerializer.Serialize(room, new JsonSerializerOptions() { })</pre>
+        <pre>@JsonSerializer.Serialize(room, new JsonSerializerOptions())</pre>
     }
 }
 
