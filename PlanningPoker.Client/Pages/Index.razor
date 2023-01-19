@@ -1,6 +1,5 @@
 ﻿@page "/"
 @using PlanningPoker.Shared.Dtos
-@using System.Text.Json
 @inject Services.Rooms.IRoomService RoomService
 
 @if (_roomCollection is null)
@@ -9,12 +8,23 @@
 }
 else
 {
-    @foreach (var room in _roomCollection)
-    {
-        <pre>@JsonSerializer.Serialize(room, new JsonSerializerOptions())</pre>
-    }
+    <div class="room-list">
+        @foreach (var room in _roomCollection)
+        {
+            <RoomSelectorItem RoomObject="room"/>
+        }
+    </div>
 }
 
+<style>   
+    .room-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 
 @code
 {
