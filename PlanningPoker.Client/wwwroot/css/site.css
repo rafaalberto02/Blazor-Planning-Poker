@@ -58,7 +58,13 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    min-height: 100vh;
 }
+
+main{
+    min-height: 100vh;
+}
+
 
 ol, ul {
     list-style: none;

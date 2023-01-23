@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Components;
 using PlanningPoker.Client.Services.Rooms;
 using PlanningPoker.Shared.Dtos;
 
-namespace PlanningPoker.Client.Pages.RoomsList;
+namespace PlanningPoker.Client.Pages.Rooms;
 
-public partial class RoomsList
+public partial class Rooms
 {
     private IReadOnlyCollection<RoomDto>? _roomCollection;
 
