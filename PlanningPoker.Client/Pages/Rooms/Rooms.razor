@@ -1,16 +1,21 @@
 @page "/Rooms"
 @using PlanningPoker.Client.Pages.Rooms.Components
 
-@if (_roomCollection is null)
-{
-    <p>Loading...</p>
-}
-else
-{
-    <div class="room-list">
-        @foreach (var room in _roomCollection)
-        {
-            <RoomsListItem RoomObject="room"/>
-        }
-    </div>
-}
+<div class="room-list">
+    <h2 class="room-list-title">Welcome!</h2>
+
+    @if (_roomCollection is null)
+    {
+        <p class="orange-text">Loading...</p>
+    }
+    else
+    {
+        <p class="room-list-description">There are currently <span class="orange-text">@_roomCollection.Count</span> active rooms</p>
+        <div class="room-list-items">
+            @foreach (var room in _roomCollection)
+            {
+                <RoomsListItem RoomObject="room"/>
+            }
+        </div>
+    }
+</div>

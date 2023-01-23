@@ -1,9 +1,36 @@
-.room-list {
+.room-list-title {
+    font-size: 6rem;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.5rem;
+    padding-bottom: 1rem;
+    text-decoration-color: #ff8a00;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.room-list, .room-list-items {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
-    
+}
+
+.room-list {
     height: 100vh;
+}
+
+.room-list-items {
+    gap: 20px;
+}
+
+.orange-text {
+    color: #ff8a00;
+}
+
+.room-list-description {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding-bottom: 2.5rem;
 }
