@@ -62,7 +62,7 @@ a {
 body {
     padding: 0;
     margin: 0;
-    background-color: #17141d;
+    background-color: var(--primary-color);
     color: white;
     -webkit-font-smoothing: antialiased;
 }
