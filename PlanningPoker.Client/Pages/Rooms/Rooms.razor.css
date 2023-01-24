@@ -6,7 +6,7 @@
     padding-bottom: 1rem;
     text-decoration-color: var(--secondary-color);
     font-family: var(--secondary-font-family);
-    font-weight: 900;
+    font-weight: 200;
 }
 
 .room-list, .room-list-items {
@@ -31,6 +31,6 @@
 .room-list-description {
     font-family: var(--secondary-font-family);
     font-size: 1.2rem;
-    font-weight: 900;
+    font-weight: 600;
     padding-bottom: 2.5rem;
 }
