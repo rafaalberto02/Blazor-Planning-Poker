@@ -22,7 +22,7 @@
     align-items: center;
     height: 100%;
     font-size: 8rem;
-    color: #ff8a00;
+    color: var(--secondary-color);
 }
 
 .card-author {
@@ -69,7 +69,7 @@
     width: 60px;
     height: 48px;
     fill: none;
-    stroke: #ff8a00;
+    stroke: var(--secondary-color);
     stroke-width: 8;
     stroke-linecap: round;
     pointer-events: none;
