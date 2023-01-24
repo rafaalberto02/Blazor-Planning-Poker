@@ -3,13 +3,13 @@
     width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
-    background: #17141d;
-    box-shadow: -1rem 0 3rem #000;
+    background: var(--primary-color);
+    box-shadow: var(--primary-box-shadow);
     display: flex;
     flex-direction: column;
     transition: .2s;
     margin: 3rem;
-    font-family: 'DM Mono', monospace;
+    font-family: var(--primary-font-family);
 }
 
 .card:hover {
@@ -22,7 +22,7 @@
     align-items: center;
     height: 100%;
     font-size: 8rem;
-    color: #ff8a00;
+    color: var(--secondary-color);
 }
 
 .card-author {
@@ -69,7 +69,7 @@
     width: 60px;
     height: 48px;
     fill: none;
-    stroke: #ff8a00;
+    stroke: var(--secondary-color);
     stroke-width: 8;
     stroke-linecap: round;
     pointer-events: none;

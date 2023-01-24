@@ -1,14 +1,14 @@
 .room {
     font-size: 1rem;
-    font-family: 'DM Mono', sans-serif;
+    font-family: var(--primary-font-family);
     display: flex;
     justify-content: space-between;
     width: 300px;
     align-items: center;
     padding: 1.5rem;
-    border: 2px solid #ff8a00;
+    border: 2px solid var(--secondary-color);
     border-radius: 16px;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: var(--primary-box-shadow);
 }
 
 h2.room-name {
@@ -22,13 +22,13 @@ span.room-owner {
 }
 
 button.open-btn {
-    background: #ff8a00;
+    background: var(--secondary-color);
     color: white;
     border: none;
     font-weight: 700;
     padding: 0.5rem;
     border-radius: 16px;
     cursor: pointer;
-    box-shadow: -1rem 0 3rem #000;
-    font-family: 'DM Mono', sans-serif;
+    box-shadow: var(--primary-box-shadow);
+    font-family: var(--primary-font-family);
 }
