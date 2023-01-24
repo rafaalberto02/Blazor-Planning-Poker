@@ -9,7 +9,7 @@
     flex-direction: column;
     transition: .2s;
     margin: 3rem;
-    font-family: var(--primary-font);
+    font-family: var(--primary-font-family);
 }
 
 .card:hover {
