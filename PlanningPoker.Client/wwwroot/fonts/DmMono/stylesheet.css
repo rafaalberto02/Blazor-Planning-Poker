@@ -1,53 +1,47 @@
 @font-face {
-    font-family: 'dm_monoitalic';
+    font-family: 'DM Mono';
     src: url('dmmono-italic-webfont.woff2') format('woff2'),
     url('dmmono-italic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'dm_monolight';
+    font-family: 'DM Mono';
     src: url('dmmono-light-webfont.woff2') format('woff2'),
     url('dmmono-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'dm_monolight_italic';
+    font-family: 'DM Mono';
     src: url('dmmono-lightitalic-webfont.woff2') format('woff2'),
     url('dmmono-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'dm_monomedium';
+    font-family: 'DM Mono';
     src: url('dmmono-medium-webfont.woff2') format('woff2'),
     url('dmmono-medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'dm_monomedium_italic';
+    font-family: 'DM Mono';
     src: url('dmmono-mediumitalic-webfont.woff2') format('woff2'),
     url('dmmono-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'dm_monoregular';
+    font-family: 'DM Mono';
     src: url('dmmono-regular-webfont.woff2') format('woff2'),
     url('dmmono-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
