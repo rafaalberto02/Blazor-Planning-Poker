@@ -8,7 +8,7 @@
     padding: 1.5rem;
     border: 2px solid var(--secondary-color);
     border-radius: 16px;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: var(--primary-box-shadow);
 }
 
 h2.room-name {
@@ -29,6 +29,6 @@ button.open-btn {
     padding: 0.5rem;
     border-radius: 16px;
     cursor: pointer;
-    box-shadow: -1rem 0 3rem #000;
+    box-shadow: var(--primary-box-shadow);
     font-family: var(--primary-font-family);
 }
