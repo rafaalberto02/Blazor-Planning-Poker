@@ -9,7 +9,7 @@
     flex-direction: column;
     transition: .2s;
     margin: 3rem;
-    font-family: 'DM Mono', monospace;
+    font-family: var(--primary-font);
 }
 
 .card:hover {

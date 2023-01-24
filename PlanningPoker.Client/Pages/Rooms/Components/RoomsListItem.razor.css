@@ -1,6 +1,6 @@
 .room {
     font-size: 1rem;
-    font-family: 'DM Mono', sans-serif;
+    font-family: var(--primary-font);
     display: flex;
     justify-content: space-between;
     width: 300px;
@@ -30,5 +30,5 @@ button.open-btn {
     border-radius: 16px;
     cursor: pointer;
     box-shadow: -1rem 0 3rem #000;
-    font-family: 'DM Mono', sans-serif;
+    font-family: var(--primary-font);
 }

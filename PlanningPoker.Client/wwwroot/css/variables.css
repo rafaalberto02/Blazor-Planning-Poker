@@ -1,4 +1,6 @@
 :root {
     --primary-color: #17141d;
     --secondary-color: #ff8a00;
+    
+    --primary-font: 'DM Mono', monospace;
 }
